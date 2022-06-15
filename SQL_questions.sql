@@ -55,4 +55,9 @@ select date, employee, salary,
        sum(salary) over (partition by employee order by date)
 from charges;
 
-drop table charges;
+select
+    date, employee, salary,
+    sum(salary) over(partition by employee rows between unbounded preceding and current row ) as salary_total
+from charges;
+
+
