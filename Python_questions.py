@@ -42,3 +42,33 @@ print(not x == x or not y == x)
 
 # Ответ
 # True
+
+# Что выведет код?
+for i in range(0):
+    print(1)
+else:
+    print(2)
+
+# Ответ
+# 2
+# Блок else выполняется если цикл завершился нормально, то есть не был остановлен с помощью оператора break.
+# Continue никак не влияют на блок else, только оператор break имеет значение.
+
+# Что выведет код?
+nums = 0, 1, 2, 3
+print(sorted(nums) == nums)
+
+# Ответ
+# False
+# type(sorted(nums) -> list
+# type(nums) -> tuple
+
+# Что выведет код?
+first = second = []
+first.append(1)
+print(second)
+
+# Ответ
+# [1]
+# first и second указыавют на один и тот же массив.
+# Первым делом значение задается second, потом first, т.е. second = [], first = second.
