@@ -11,8 +11,8 @@ l = [1, 2, 3, 3, 4, 5, 5, 5, 6]
 # l = list(set(l))
 
 #	Какова алгоритмическая сложность кода?
-for i in range(10):
-    for j in range(10):
+for i in range(n):
+    for j in range(n):
         print(f'i = {i}, j = {j}')
 
 # Ответ
